@@ -1,0 +1,9 @@
+LARAVEL
+______________________
+Installer PHP et Composer
+Aller dans le fichier php.ini (de l'installation de PHP faite precedement) et activer l'extension "fileinfo"
+Ouvrir une invite de commandes
+Pour pouvoir faire un projet avec laravel il faut installer des dépendances comme cela : "composer global require laravel/installer"
+Ensuite pour la création d'un projet dans github faites la commande ci: "laravel new <nom du projet> --github="<lien du github>" --branch="<nom de la branch>""
+Pour finir allé dans le dossier qui vient d'être créé et voilà votre projet est créé
+
