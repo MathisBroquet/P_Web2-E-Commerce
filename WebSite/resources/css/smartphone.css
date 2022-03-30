@@ -1,0 +1,263 @@
+/*
+    Auteur : Mathis Broquet
+    Date : 01.06.2021
+    Description :
+*/
+@media screen and (max-width: 850px){
+    #headerCenter{
+        width: 100%;
+    }
+    #logIn.link.smartphone{
+        margin-left: 0px;
+    }
+    .noSmartphone{
+        flex-direction: column;
+        display: none;
+    }
+    #listLogo{
+        display: unset;
+        justify-items: right;
+    }
+    #logo{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 1350px){
+    #explication{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+    }
+    #explication button{
+        margin-bottom: -75px;
+    }
+    #newProduct{
+        width: 700px;
+    }
+    #product{
+        display: grid;
+        grid-template-columns: 210px 210px;
+        column-gap: 100px;
+        row-gap: 100px;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+    #shop{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -200px;
+    }
+    #bodyIndex{
+        padding-top: 200px;
+    }
+}
+@media screen and (max-width: 700px){
+    #newProduct{
+        width: 100%;
+        height: 400px;
+    }
+    #newProduct img{
+        width: 85%;
+        margin: 0;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+@media screen and (max-width: 660px){
+    #reseaux{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 630px){
+    #explication{
+        width: 100%;
+        padding: 0;
+    }
+    #explication h1{
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+    #explication button{
+        margin: 0;
+        margin-left: 60%;
+        margin-bottom: -75px;
+    }
+    #test123{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    #suscriber{
+        margin-top: 75px;
+    }
+    #footerReseaux{
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid white;
+        margin-top: 75px;
+    }
+}
+@media screen and (max-width: 520px){
+    #product{
+        display: grid;
+        grid-template-columns: 210px;
+        column-gap: 100px;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    #explication p{
+        width: fit-content;
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width:400px)
+{
+    #explication button{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 965px)
+{
+    .background{
+        background-image: url(../images/back_slime.webp);
+    }
+}
+@media screen and (max-width: 1150px)
+{
+    #bodyContact{
+        display: grid;
+        grid-template-columns: 600px;
+        column-gap: 10%;
+        row-gap: 100px;
+        justify-content: center;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    #bodyContact #description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #description{
+        width: 100%;
+        margin: 0;
+    }
+    #description #service{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #bodyContact div form{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #required{
+        display: flex;
+        flex-direction: row;
+    }
+    #formulaire{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    #maps{
+        width: 100%;
+    }
+    #maps iframe{
+        width: 100%;
+    }
+    #description{
+        width: 100%;
+        margin: 0;
+    }
+    #description #service{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #formulaire{
+        width: 100%;
+    }
+    #bodyContact{
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 10%;
+        row-gap: 100px;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+    #membre{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 900px)
+{
+    #intro img{
+        width: 100%;
+    }
+    #important{
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #text{
+        margin: 0;
+        margin-top: 75px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #introText{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    #intro{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #intro h1{
+        margin: 0;
+        margin-left: 30px;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    #important{
+        width: 75%;
+        margin: 0;
+        padding: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #text{
+        width: 75%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #intro h1{
+        margin: 0;
+        margin-left: 30px;
+        padding: 0;
+    }
+}

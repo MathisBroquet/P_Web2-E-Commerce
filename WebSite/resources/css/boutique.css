@@ -1,0 +1,52 @@
+/*
+    Auteur : Mathis Broquet
+    Date : 01.06.2021
+    Description :
+*/
+
+/*____________________________________________________________________________Tout____________________________________________________________________________*/
+/*Met des paramètres sur tout le document*/
+*{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+/*____________________________________________________________________________menu____________________________________________________________________________*/
+#top{
+    margin: 0;
+    padding: 0;
+}
+#bodyContact{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    column-gap: 10%;
+    row-gap: 100px;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+}
+.article button{
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    border: none;
+    transition: 0.5s;
+}
+.article button:hover{
+    background-color: grey;
+    cursor: pointer;
+}
+.article img{
+    width: 100%;
+    height: auto;
+}
+#bodyContact h1{
+    position: absolute;
+    width: 100px;
+    margin-left: -100px;
+}

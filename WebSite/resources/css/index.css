@@ -1,0 +1,214 @@
+/*
+    Auteur : Mathis Broquet
+    Date : 01.06.2021
+    Description :
+*/
+
+/*____________________________________________________________________________Tout____________________________________________________________________________*/
+/*Met des paramètres sur tout le document*/
+*{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+/*____________________________________________________________________________menu____________________________________________________________________________*/
+.background{
+    margin: 0;
+    padding: 0;
+    /*background-image: url(../../resources/images/background.jpg);*/
+    background-image: url(../images/back_background.webp);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+}
+#accueil{
+    text-align: center;
+    margin-top: 175px;
+}
+#accueil h1{
+    height: 59px;
+    font-size: 80px;
+    text-transform:uppercase;
+    margin: 0;
+}
+#accueil button{
+    height: 50px;
+    width: 160px;
+    background: none;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+    font-size: 17px;
+    margin-top: 65px;
+    outline: none;
+    transition: 0.5s;
+}
+#accueil button:hover{
+    background: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+.violet{
+    color: blueviolet;
+}
+header #reseaux{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 50%;
+    left: 10px;
+}
+header #reseaux img{
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+}
+#bodyIndex{
+    background-color: white;
+    padding-top: 100px;
+}
+#bodyIndex h1{
+    margin-top: 0px;
+    padding-top: 75px;
+    margin-bottom: 0px;
+}
+#newProduct{
+    height: 400px;
+    width: 825px;
+    background-color: lightgray;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#newProduct img{
+    margin-right: 50px;
+}
+
+#product{
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+#product .article{
+    margin-right: 50px;
+    height: 375px;
+    width: 200px;
+    background-color: lightgrey;
+}
+#product .article:hover{
+    height: 365px;
+    width: 190px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+#new{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+#new button{
+    height: 45px;
+    width: 155px;
+    border: none;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+#new button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+#new h1{
+    margin-left: 0;
+    font-size: 50px;
+}
+#shop{
+    margin-right: -125px;
+    position: relative;
+}
+#explication{
+    height: 335px;
+    width: 540px;
+    padding-top: 25px;
+    padding-left: 75px;
+    padding-right: 50px;
+    background-color: black;
+    color: white;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+#explication h1{
+    margin-left: -25px;
+    color: blueviolet;
+    padding: 0;
+    font-size: 50px;
+}
+#explication p{
+    margin-top: -25px;
+    margin-left: 50px;
+    padding:0;
+    color: white;
+    text-align: justify;
+    width: 400px;
+}
+#about{
+    width: 100%;
+    height: 894px;
+    background-image: url(../images/back_background2.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#bodyIndex #menuContact{
+    height: 400px;
+    width: 100%;
+    background-image: url(../images/back_backgroundRefContact.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+#bodyIndex #menuContact h1{
+    padding: 0;
+    width: 226px;
+    transition: 0.5s;
+}
+#bodyIndex #menuContact a{
+    margin-top: 175px;
+    text-align: center;
+}
+#bodyIndex #menuContact h1:hover{
+    color: blueviolet;
+}
+#marginMenu{
+    padding-top: 175px;
+}
+#explication button{
+    height: 45px;
+    width: 155px;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: black;
+    margin-top: 75px;
+    margin-left: 350px;
+    text-transform: uppercase;
+    transition: 0.75s;
+}
+#explication button:hover{
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}

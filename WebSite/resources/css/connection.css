@@ -1,0 +1,44 @@
+#connection{
+    display: flex;
+    justify-content: center;
+}
+#sign-up form{
+    display: flex;
+    flex-direction: column;
+}
+#sign-up>form>input{
+    height: 25px;
+    width: 300px;
+    outline: none;
+    border: none;
+    margin-bottom: 25px;
+    border-bottom: 1px solid darkgrey;
+}
+#sign-up>form>input:hover{
+    border-bottom: 1px solid black;
+    transition: 0.5s;
+}
+#sign-up>form>input:focus{
+    border-bottom: 1px solid blueviolet;
+    transition: 0.5s;
+}
+#sign-up>form>button{
+    height: 45px;
+    width: 300px;
+    outline: none;
+    border: none;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background-color: #8a2be2;
+    color: white;
+}
+#textSup{
+    display: none;
+}
+#textSup:target{
+    display: flex;
+    flex-direction: column;
+}
+#textSup:target #test{
+    content: attr(href="#");
+}

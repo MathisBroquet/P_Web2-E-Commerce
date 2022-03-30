@@ -1,0 +1,77 @@
+/*
+    Auteur : Mathis Broquet
+    Date : 01.06.2021
+    Description :
+*/
+
+#backTop img{
+    vertical-align: middle;
+    height: 30px;
+}
+footer{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+footer a{
+    color: white;
+}
+#footerLink{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}#footerLink .link{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+#suscribe p{
+    color: white;
+    margin-top: 0;
+}
+#suscribe input{
+    height: 35px;
+    width: 170px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    outline: none;
+}
+#suscribe button{
+    height: 40px;
+    width: 145px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    outline: none;
+}
+#suscribe button:hover{
+    transition: 1s;
+    cursor: pointer;
+    color: black;
+    background: white;
+}
+#suscribe input:focus:invalid{
+    border: 2px solid red;
+}
+#suscribe input:valid {
+    border: 2px solid greenyellow;
+}
+#footerReseaux{
+    display: flex;
+    flex-direction: row;
+}
+#footerReseaux img{
+    margin-top: 15px;
+    margin-right: 10px;
+}
+#footerReseaux p{
+    margin-top: 19px;
+    margin-left: 5px;
+}
+#underlineFooter{
+    text-decoration: underline;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="ionicon"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="logo-twitter-white.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect1259"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilise la règle de remplissage « fill-rule: evenodd » de la boîte de dialogue &lt;b&gt;Fond et contour&lt;/b&gt; en l'absence de résultat de mise à plat après une conversion en chemin." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1255">
+      <path
+         d="m 428.6889,150.5875 a 145.20259,145.20259 0 0 1 -40.68983,11.00892 70.162062,70.162062 0 0 0 31.17755,-38.56719 142.28126,142.28126 0 0 1 -45.01424,16.90913 71.334908,71.334908 0 0 0 -51.74192,-22.08979 c -39.1572,0 -70.84562,31.22791 -70.84562,69.72314 a 67.068053,67.068053 0 0 0 1.82763,15.90176 201.97406,201.97406 0 0 1 -146.06604,-72.88909 68.852505,68.852505 0 0 0 -9.634595,35.04145 c 0,24.17644 12.613475,45.5467 31.659635,58.06664 a 70.154867,70.154867 0 0 1 -32.220865,-8.7064 v 0.86345 c 0,33.81824 24.464245,61.95214 56.843415,68.35602 a 72.500558,72.500558 0 0 1 -18.66479,2.44643 67.909912,67.909912 0 0 1 -13.31863,-1.29517 c 9.0014,27.70218 35.19976,47.84922 66.23339,48.42485 a 143.61241,143.61241 0 0 1 -88.01378,29.86078 146.06603,146.06603 0 0 1 -16.909115,-1.00734 200.5206,200.5206 0 0 0 108.463015,31.51572 c 130.49525,0 201.78699,-106.27563 201.78699,-198.44834 0,-3.02205 -0.0791,-6.0441 -0.22305,-8.99421 A 142.81373,142.81373 0 0 0 428.6889,150.5875 Z"
+         id="path1257"
+         style="display:none;fill:#ffffff;fill-opacity:1;stroke-width:0.719537" />
+      <path
+         id="lpe_path-effect1259"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.719537"
+         class="powerclip"
+         d="M -4.9999992,-4.9999992 H 517 V 517 H -4.9999992 Z M 428.6889,150.5875 a 145.20259,145.20259 0 0 1 -40.68983,11.00892 70.162062,70.162062 0 0 0 31.17755,-38.56719 142.28126,142.28126 0 0 1 -45.01424,16.90913 71.334908,71.334908 0 0 0 -51.74192,-22.08979 c -39.1572,0 -70.84562,31.22791 -70.84562,69.72314 a 67.068053,67.068053 0 0 0 1.82763,15.90176 201.97406,201.97406 0 0 1 -146.06604,-72.88909 68.852505,68.852505 0 0 0 -9.634595,35.04145 c 0,24.17644 12.613475,45.5467 31.659635,58.06664 a 70.154867,70.154867 0 0 1 -32.220865,-8.7064 v 0.86345 c 0,33.81824 24.464245,61.95214 56.843415,68.35602 a 72.500558,72.500558 0 0 1 -18.66479,2.44643 67.909912,67.909912 0 0 1 -13.31863,-1.29517 c 9.0014,27.70218 35.19976,47.84922 66.23339,48.42485 a 143.61241,143.61241 0 0 1 -88.01378,29.86078 146.06603,146.06603 0 0 1 -16.909115,-1.00734 200.5206,200.5206 0 0 0 108.463015,31.51572 c 130.49525,0 201.78699,-106.27563 201.78699,-198.44834 0,-3.02205 -0.0791,-6.0441 -0.22305,-8.99421 A 142.81373,142.81373 0 0 0 428.6889,150.5875 Z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.0399442"
+     inkscape:cx="207.22266"
+     inkscape:cy="216.83856"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1672"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <title
+     id="title2">Logo Twitter</title>
+  <path
+     style="fill:#ffffff;stroke:#000000;stroke-width:1.19113;paint-order:stroke fill markers;stroke-opacity:0"
+     id="path849"
+     clip-path="url(#clipPath1255)"
+     inkscape:path-effect="#path-effect1259"
+     sodipodi:type="arc"
+     sodipodi:cx="256"
+     sodipodi:cy="256"
+     sodipodi:rx="255.40443"
+     sodipodi:ry="255.40443"
+     d="M 511.40443,256 A 255.40443,255.40443 0 0 1 256,511.40443 255.40443,255.40443 0 0 1 0.5955658,256 255.40443,255.40443 0 0 1 256,0.5955658 255.40443,255.40443 0 0 1 511.40443,256 Z" />
+</svg>
