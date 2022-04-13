@@ -16,8 +16,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('t_have', function (Blueprint $table) {
-            $table->foreignIdFor(t_category::class);
-            $table->foreignIdFor(t_article::class);
+            $table->unsignedBigInteger("FKCategory");
+            $table->unsignedBigInteger("FKArticle");
+            $table->foreign("FKCategory")->references("idCategory")->on("t_category")->onDelete("cascade");
+            $table->foreign("FKArticle")->references("idArticle")->on("t_article")->onDelete("cascade");
             $table->timestamps();
         });
     }

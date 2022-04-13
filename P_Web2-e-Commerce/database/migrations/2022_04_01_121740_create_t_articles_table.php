@@ -18,9 +18,11 @@ return new class extends Migration
             $table->id("idArticle");
             $table->string("artName", 150);
             $table->string("artDescription", 400);
+            $table->string("artPathToImage", 400);
             $table->float("artPrice");
             $table->date("artRealeseDate");
-            $table->foreignIdFor(t_author::class);
+            $table->unsignedBigInteger("FKAuthor");
+            $table->foreign("FKAuthor")->references("idAuthor")->on("t_author")->onDelete("cascade");
             $table->timestamps();
         });
     }
@@ -32,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('t_articles');
+        Schema::dropIfExists('t_article');
     }
 };

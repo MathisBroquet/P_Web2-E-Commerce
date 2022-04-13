@@ -16,8 +16,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('t_contain', function (Blueprint $table) {
-            $table->foreignIdFor(t_article::class);
-            $table->foreignIdFor(t_basket::class);
+            $table->unsignedBigInteger("FKBasket");
+            $table->unsignedBigInteger("FKArticle");
+            $table->foreign("FKBasket")->references("idBasket")->on("t_basket")->onDelete("cascade");
+            $table->foreign("FKArticle")->references("idArticle")->on("t_article")->onDelete("cascade");
             $table->timestamps();
         });
     }

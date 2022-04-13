@@ -19,8 +19,10 @@ return new class extends Migration
             $table->id("idOrder");
             $table->float("ordPrice");
             $table->date("ordDate");
-            $table->foreignIdFor(t_basket::class);
-            $table->foreignIdFor(t_user::class);
+            $table->unsignedBigInteger("FKBasket");
+            $table->unsignedBigInteger("FKUser");
+            $table->foreign("FKBasket")->references("idBasket")->on("t_basket")->onDelete("cascade");
+            $table->foreign("FKUser")->references("idUser")->on("t_user")->onDelete("cascade");
             $table->timestamps();
         });
     }

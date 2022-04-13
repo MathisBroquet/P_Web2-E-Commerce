@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('t_basket', function (Blueprint $table) {
             $table->id("idBasket");
+            $table->bigInteger("basNumberOfGame");
             $table->timestamps();
         });
     }
