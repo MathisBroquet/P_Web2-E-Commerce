@@ -36,7 +36,7 @@
                         Home
                     </div>
                 </a>
-                <a href="" class="w-1/3 rounded-lg items-center flex justify-center hover:bg-opacity-40 hover:bg-ored-300 focus:text-ored">
+                <a href="games" class="w-1/3 rounded-lg items-center flex justify-center hover:bg-opacity-40 hover:bg-ored-300 focus:text-ored">
                     <div class="text-4xl">
                         Games
                     </div>

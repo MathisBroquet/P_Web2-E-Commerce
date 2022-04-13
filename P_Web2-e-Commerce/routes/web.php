@@ -26,3 +26,6 @@ Route::get('/game', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+Route::get('/games', function () {
+    return view('pages.games');
+});
