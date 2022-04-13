@@ -20,6 +20,9 @@ module.exports = {
           800: '#4F1A00',
           900: '#170700',
         },
+        whitesmoke:{
+          default: '#F5F5F5'
+        }
 
       },
       backgroundImage: theme => ({

@@ -9,6 +9,10 @@ html{
     scroll-behavior: smooth;
 }
 
+.w-1\/10{
+    width: 10%;
+}
+
 .grow-1{
     flex-grow: 1;
 }
