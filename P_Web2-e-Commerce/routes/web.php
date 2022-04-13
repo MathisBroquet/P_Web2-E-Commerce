@@ -29,3 +29,6 @@ Route::get('/contact', function () {
 Route::get('/games', function () {
     return view('pages.games');
 });
+Route::get('/contact', function () {
+    return view('pages.gontagt');
+});
