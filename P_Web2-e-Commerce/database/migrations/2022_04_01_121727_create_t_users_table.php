@@ -13,6 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
+        
         Schema::create('t_user', function (Blueprint $table) {
             $table->id("idUser");
             $table->string("useLogin", 100);

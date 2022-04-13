@@ -16,7 +16,8 @@ return new class extends Migration
     {
         Schema::create('t_session', function (Blueprint $table) {
             $table->id("idSession");
-            $table->foreignIdFor(t_user::class);
+            $table->unsignedBigInteger("FKUser");
+            $table->foreign("FKUser")->references("idUser")->on("t_user")->onDelete("cascade");
             $table->timestamps();
         });
     }
