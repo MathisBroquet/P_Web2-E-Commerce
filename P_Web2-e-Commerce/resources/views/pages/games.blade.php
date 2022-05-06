@@ -70,6 +70,7 @@
     <div class=" w-1/10">
     </div>
 </div>
+
 <div class="flex mt-5 mb-5">
     <div class=" w-1/10">
     </div>
@@ -77,19 +78,18 @@
         <div>
             Minecraft
         </div>
-        <div class=" w-fit h-fit ">
+        <div class="w-fit h-fit relative ">
             <img src="/images/games/Minecraft.png" alt="Minecraft">
-        </div>
-
-        <div class="flex bg-white bg-opacity-25 text-gray-400 justify-between h-1/4">
-            <div class="ml-2">
-                Etoile
-            </div>
-            <div>
-                Like
-            </div>
-            <div class="mr-2">
-                Panier
+            <div class="flex w-full bg-white bg-opacity-25 inset-08 absolute mt-[-95px]  white justify-between h-1/4">
+                <div class="ml-2">
+                    Etoile
+                </div>
+                <div>
+                    Like
+                </div>
+                <div class="mr-2">
+                    <a href=""> Panier</a>
+                </div>
             </div>
         </div>
     </div>

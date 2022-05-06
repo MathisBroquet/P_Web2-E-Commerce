@@ -26,6 +26,12 @@ Route::get('/game', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+Route::get('/register', function(){
+    return view('pages.register');
+});
+Route::post('/register', function(){
+    return 'Formulaire reçu';
+});
 
 Route::get('/games', [GameController::class, 'getAllGames']);
 
