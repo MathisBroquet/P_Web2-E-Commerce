@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\GameController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,9 +26,9 @@ Route::get('/game', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
-Route::get('/games', function () {
-    return view('pages.games');
-});
+
+Route::get('/games', [GameController::class, 'getAllGames']);
+
 Route::get('/contact', function () {
     return view('pages.gontagt');
 });

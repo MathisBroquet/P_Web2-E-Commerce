@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class t_user extends Model
 {
+    protected $table = 't_user';
+    protected $fillable = [
+        'useLogin',
+        'usePassword',
+        'useAdministrator',
+    ];
     use HasFactory;
 }

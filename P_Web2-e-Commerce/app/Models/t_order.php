@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class t_order extends Model
 {
+    protected $table = 't_order';
+    protected $fillable = [
+        'ordPrice',
+        'ordDate',
+        'FKBasket',
+        'FKUser',
+    ];
     use HasFactory;
 }

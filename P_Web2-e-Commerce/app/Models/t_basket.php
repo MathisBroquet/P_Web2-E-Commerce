@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class t_basket extends Model
 {
+    protected $table = 't_basket';
+    protected $fillable = [
+        'basNumberOfGame',
+    ];
     use HasFactory;
 }

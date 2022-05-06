@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class t_have extends Model
 {
+    protected $table = 't_have';
+    protected $fillable = [
+        'FKArticle',
+    ];
     use HasFactory;
 }
