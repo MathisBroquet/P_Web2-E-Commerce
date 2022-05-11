@@ -30,7 +30,14 @@ Route::get('/contact', function () {
 Route::get('/register', function(){
     return view('pages.register');
 });
+Route::get('/connect', function(){
+    return view('pages.connect');
+});
 Route::post('/register', [UserController::class, 'addUser']);
+
+Route::post('connect', [UserController::class, 'connectUser']);
+
+
 
 Route::get('/games', [GameController::class, 'getAllGames']);
 
