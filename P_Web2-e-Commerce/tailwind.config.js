@@ -26,7 +26,8 @@ module.exports = {
 
       },
       backgroundImage: theme => ({
-        'amongus': "url('/images/games/amogus.png')"        
+        'amongus': "url('/images/games/amogus.png')" ,
+        'minecraft' : "url ('/images/games/Minecraft.png')"       
       })
     },
     plugins: [],
