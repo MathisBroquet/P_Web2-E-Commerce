@@ -439,12 +439,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
   left: 0px;
 }
-.inset-8 {
-  top: 2rem;
-  right: 2rem;
-  bottom: 2rem;
-  left: 2rem;
-}
 .top-0 {
   top: 0px;
 }
@@ -515,6 +509,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-5 {
   margin-top: 1.25rem;
 }
+.mt-\[-95px\] {
+  margin-top: -95px;
+}
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -529,45 +526,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mt-\[-60px\] {
   margin-top: -60px;
-}
-.mt-\[-50px\] {
-  margin-top: -50px;
-}
-.mt-\[-100px\] {
-  margin-top: -100px;
-}
-.mt-\[-90px\] {
-  margin-top: -90px;
-}
-.mt-\[-95px\] {
-  margin-top: -95px;
-}
-.mt-\[h\] {
-  margin-top: h;
-}
-.mt-\[-1\/4\] {
-  margin-top: -1 / 4;
-}
-.mt-\[-25\%\] {
-  margin-top: -25%;
-}
-.mt-\[-50\%\] {
-  margin-top: -50%;
-}
-.mt-\[-98\] {
-  margin-top: -98;
-}
-.mt-\[-98px\] {
-  margin-top: -98px;
-}
-.mt-\[-99px\] {
-  margin-top: -99px;
-}
-.mt-\[-97px\] {
-  margin-top: -97px;
-}
-.mt-\[-96px\] {
-  margin-top: -96px;
 }
 .flex {
   display: flex;
@@ -662,6 +620,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.flex-row {
+  flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
@@ -911,6 +872,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-ored-300 {
   --tw-text-opacity: 1;
   color: rgb(255 133 74 / var(--tw-text-opacity));
+}
+.text-neutral-900 {
+  --tw-text-opacity: 1;
+  color: rgb(23 23 23 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;

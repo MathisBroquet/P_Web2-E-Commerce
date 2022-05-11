@@ -29,11 +29,15 @@ Route::get('/contact', function () {
 Route::get('/register', function(){
     return view('pages.register');
 });
-Route::post('/register', function(){    
-    return 'Formulaire reçu ' . request('name');
+Route::post('/register', function(){
+    return 'Formulaire reçu';
 });
 
 Route::get('/games', [GameController::class, 'getAllGames']);
+
+Route::get("/game/displayAddGame", [GameController::class, 'displaceAddGame']);
+Route::post("/game/add", [GameController::class, 'addGame'])->name('game.add');
+Route::get("/game/test", [GameController::class, 'updateGame']);
 
 Route::get('/contact', function () {
     return view('pages.gontagt');
