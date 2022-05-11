@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GameController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,9 +30,7 @@ Route::get('/contact', function () {
 Route::get('/register', function(){
     return view('pages.register');
 });
-Route::post('/register', function(){
-    return 'Formulaire reçu';
-});
+Route::post('/register', [UserController::class, 'addUser']);
 
 Route::get('/games', [GameController::class, 'getAllGames']);
 
