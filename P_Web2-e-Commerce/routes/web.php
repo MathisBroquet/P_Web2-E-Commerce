@@ -35,4 +35,6 @@ Route::get('/contact', function () {
     return view('pages.gontagt');
 });
 
-Route::get('/game', [UserController::class, 'GetAllOrderFromSpecificUser'])->name('Order.Get');
+Route::get('/game', [UserController::class, 'GetAllOrderFromSpecificUser'], function () {
+    return view('/game');
+})->name('Order.Get');
