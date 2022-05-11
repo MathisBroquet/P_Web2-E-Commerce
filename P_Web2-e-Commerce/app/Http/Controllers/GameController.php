@@ -50,7 +50,14 @@ class GameController extends Controller
         $game->delete();
     }
 
-    public function updateGame (int $idGame){
+    public function updateGame (int $idGame = 1, $arrayUpdate = array("artName" => "MineCampf", "artDescription" => "Campf Hitler", "artPathToImage" => "D:\\")){
+        t_article::where("idArticle", $idGame)->update($arrayUpdate);
+    } 
+}
 
+class Author extends Controller
+{
+    public function select (){
+        t_article::where("idArticle", $idGame)->update($arrayUpdate);
     } 
 }

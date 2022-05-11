@@ -37,6 +37,7 @@ Route::get('/games', [GameController::class, 'getAllGames']);
 
 Route::get("/game/displayAddGame", [GameController::class, 'displaceAddGame']);
 Route::post("/game/add", [GameController::class, 'addGame'])->name('game.add');
+Route::get("/game/test", [GameController::class, 'updateGame']);
 
 Route::get('/contact', function () {
     return view('pages.gontagt');
