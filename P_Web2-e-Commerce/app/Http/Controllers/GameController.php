@@ -29,8 +29,4 @@ class GameController extends Controller
     public function deleteGame(int $idGame){
 
     }
-
-    public function updateGame (int $idGame){
-
-    } 
 }
