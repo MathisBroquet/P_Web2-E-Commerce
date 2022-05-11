@@ -58,6 +58,6 @@ class GameController extends Controller
 class Author extends Controller
 {
     public function select (){
-        t_article::where("idArticle", $idGame)->update($arrayUpdate);
+        t_article::all();
     } 
 }
