@@ -29,7 +29,10 @@ class GameController extends Controller
     }*/
 
     public function displaceAddGame() {
-        return view('pages/addGame');
+
+        $games = t_article::all();
+
+        return view('pages/addGame', ['games' => $games]);
     }
 
     public function addGame(Request $request){
@@ -57,7 +60,7 @@ class GameController extends Controller
 
 class Author extends Controller
 {
-    public function select (){
-        t_article::all();
-    } 
+    public function selectIdAndName (){
+        t_article::all(['idAuthor, autCompanyName']);
+    }
 }
