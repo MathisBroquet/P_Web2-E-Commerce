@@ -17,6 +17,6 @@ class t_basket extends Model
         return $this->hasOne('App\t_order');
     }
     public function t_contain(){
-       return $this->
+       return $this->belongsToMany(t_article::class, 't_contain', 'idBasket', 'idArticle');
     }
 }

@@ -28,21 +28,9 @@ class GameController extends Controller
         ->where('idArticle', 1)->get();
         */
         
-        $game = t_article::where('idArticle', $idGame)->first();
+        $game = t_article::where('idArticle', $idGame)->get();
         dd($game->category);
         
         return view('pages/games', ['article' => $game]);
     }
-
-    public function addGame(){
-       
-    }
-
-    public function deleteGame(int $idGame){
-
-    }
-
-    public function updateGame (int $idGame){
-
-    } 
 }

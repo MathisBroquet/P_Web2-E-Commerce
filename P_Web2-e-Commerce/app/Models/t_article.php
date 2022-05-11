@@ -17,6 +17,16 @@ class t_article extends Model
     ];
     use HasFactory;
 
-    
+    public function t_contain(){
+        return $this->belongsToMany(t_basket::class, 't_contain', 'idArticle', 'idBasket');
+    }
+
+    public function t_have(){
+        return $this->belongsToMany(t_category::class, 't_have', 'idCategory', 'idArticle');
+    }
+
+    public function t_user(){
+        return $this->belongsTo('App\t_author');
+    }
 
 }

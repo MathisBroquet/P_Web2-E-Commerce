@@ -14,4 +14,9 @@ class t_author extends Model
         'autCountry',
     ];
     use HasFactory;
+
+
+    public function t_article(){
+        return $this->hasMany(t_article::class);
+    }
 }

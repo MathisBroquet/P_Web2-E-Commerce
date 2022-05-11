@@ -11,6 +11,6 @@ class UserController extends Controller
     public function GetAllOrderFromSpecificUser(){
         $orders = t_order::
         
-        return view('pages/games', ['article' => $game]);
+        //return view('pages/games', ['article' => $game]);
     }
 }
