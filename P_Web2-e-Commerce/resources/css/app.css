@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border-r-1{
+    border-right-width: 1px;    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.w-1\/10{
+    width: 10%;
+}
+
+.grow-1{
+    flex-grow: 1;
+}
+
+.grow-2{
+    flex-grow: 2;
+}
