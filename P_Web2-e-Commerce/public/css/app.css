@@ -515,9 +515,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-5 {
   margin-top: 1.25rem;
 }
-.mt-\[-95px\] {
-  margin-top: -95px;
-}
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -665,9 +662,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-.flex-row {
-  flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
@@ -917,10 +911,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-ored-300 {
   --tw-text-opacity: 1;
   color: rgb(255 133 74 / var(--tw-text-opacity));
-}
-.text-neutral-900 {
-  --tw-text-opacity: 1;
-  color: rgb(23 23 23 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
