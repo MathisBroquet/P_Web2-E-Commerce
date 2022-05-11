@@ -12,4 +12,11 @@ class t_basket extends Model
         'basNumberOfGame',
     ];
     use HasFactory;
+
+    public function t_order(){
+        return $this->hasOne('App\t_order');
+    }
+    public function t_contain(){
+       return $this->
+    }
 }

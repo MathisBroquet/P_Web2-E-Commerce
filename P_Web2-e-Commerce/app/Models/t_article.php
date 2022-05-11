@@ -16,4 +16,7 @@ class t_article extends Model
         'artFKAuthor',
     ];
     use HasFactory;
+
+    
+
 }

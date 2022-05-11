@@ -14,4 +14,14 @@ class t_user extends Model
         'useAdministrator',
     ];
     use HasFactory;
+
+    
+
+    public function t_session(){
+        return $this->hasOne('App\t_session');
+    }
+
+    public function t_order(){
+        return $this->hasMany('App\t_order');
+    }
 }

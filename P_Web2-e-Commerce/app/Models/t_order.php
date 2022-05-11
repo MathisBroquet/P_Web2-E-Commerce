@@ -15,4 +15,12 @@ class t_order extends Model
         'FKUser',
     ];
     use HasFactory;
+
+    public function t_user(){
+        return $this->belongsTo('App\t_user');
+    }
+
+    public function t_basket(){
+        return $this->belongsTo('App\t_order');
+    }
 }

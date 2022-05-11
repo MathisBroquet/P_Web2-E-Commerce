@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GameController;
+use App\Http\Controllers\UserController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,8 +29,10 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 
-Route::get('/games', [GameController::class, 'getAllGames']);
+Route::get('/game/{idGame}', [GameController::class, 'getOneGame'])->name("Game.Get");
 
 Route::get('/contact', function () {
     return view('pages.gontagt');
 });
+
+Route::get('/game', [UserController::class, 'GetAllOrderFromSpecificUser'])->name('Order.Get');

@@ -4,25 +4,37 @@ namespace App\Http\Controllers;
 
 use App\Models\t_article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class GameController extends Controller
 {
-    public function getAllGames(){
-        $games = t_article::all();
+    public function getAllArticles(){
+        $games = DB::table('t_article')
+        ->join('t_have','t_article.idArticle','=', 't_have.FKArticle')
+        ->join('t_category','t_have.FKCategory','=','t_category.idCategory')->get();
+        dd($games);
         
         return view('pages/games', ['article' => $games]);
     } 
-    /*public function store(Request $request)
-    {
-        $student = new Student;
-        $student->name = $request->input('name');
-        $student->email = $request->input('email');
-        $student->course = $request->input('course');
-        $student->section = $request->input('section');
-        $student->save();
-        return redirect()->back()->with('status','Student Added Successfully');
-    }*/
-    public function addGame(int $idGame){
+
+    public function getOneGame($idGame){
+        /*where('artName', "Minecraft")->get(["idArticle", "artName", "artDescription", "artPathToImage", "artPrice", "artRealeseDate", "FKAuthor"]);*/
+
+        /*
+        $game = DB::table('t_article')
+        ->join('t_have','t_article.idArticle','=', 't_have.FKArticle')
+        ->join('t_category','t_have.FKCategory','=','t_category.idCategory')
+        ->select('t_article.*', 't_have*', 't_category.*')
+        ->where('idArticle', 1)->get();
+        */
+        
+        $game = t_article::where('idArticle', $idGame)->first();
+        dd($game->category);
+        
+        return view('pages/games', ['article' => $game]);
+    }
+
+    public function addGame(){
        
     }
 
