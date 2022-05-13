@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GameController;
+use App\Http\Controllers\OrderController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,3 +44,7 @@ Route::get("/game/test", [GameController::class, 'updateGame']);
 Route::get('/contact', function () {
     return view('pages.gontagt');
 });
+
+Route::get('/game', [OrderController::class, 'GetAllOrderFromSpecificUser'], function () {
+    return view('/game');
+})->name('Order.Get');
