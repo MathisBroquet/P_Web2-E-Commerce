@@ -12,4 +12,8 @@ class t_session extends Model
         'FKUser',
     ];
     use HasFactory;
+
+    public function t_user(){
+        return $this->belongsTo(t_user::class);
+    }
 }

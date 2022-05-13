@@ -12,4 +12,7 @@ class t_category extends Model
         'catName',
     ];
     use HasFactory;
+    public function t_have(){
+        return $this->belongsToMany(t_category::class, 't_have', 'idArticle', 'idCategory');
+    }
 }
