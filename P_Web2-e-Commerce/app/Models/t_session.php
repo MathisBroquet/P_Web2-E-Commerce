@@ -14,6 +14,6 @@ class t_session extends Model
     use HasFactory;
 
     public function t_user(){
-        return $this->belongsTo('App\t_user');
+        return $this->belongsTo(t_user::class);
     }
 }

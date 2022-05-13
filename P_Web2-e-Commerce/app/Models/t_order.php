@@ -17,10 +17,10 @@ class t_order extends Model
     use HasFactory;
 
     public function t_user(){
-        return $this->belongsTo('App\t_user');
+        return $this->belongsTo(t_user::class);
     }
 
     public function t_basket(){
-        return $this->belongsTo('App\t_order');
+        return $this->belongsTo(t_order::class);
     }
 }

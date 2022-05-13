@@ -26,7 +26,7 @@ class t_article extends Model
     }
 
     public function t_user(){
-        return $this->belongsTo('App\t_author');
+        return $this->belongsTo(t_author::class, 'idAuthor', 'autCompanyName');
     }
 
 }

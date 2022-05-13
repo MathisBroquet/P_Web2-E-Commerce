@@ -10,29 +10,26 @@ use App\Models\t_order;
 class OrderController extends Controller
 {
     
-    public function GetGamesFromBasket($idBasket){
-        
-        $basket = t_basket::where('idBasket', $idBasket)->get();
+    public function GetGamesFromBasket($idBasket){       
+        $article = t_contain::where('FKArticle', $idBasket)->get();
 
-        $contain = t_contain::where("FKBasket", $basket)->get();
-
-        return t_article::where("idArticle", $contain["FKArticle"])->get();
-
+        foreach($article as $key => $value){
+            
+        }
     }
 
 
     public function GetAllOrderFromSpecificUser($idUser = 1){
-        $orders = t_order::where('FKUser', $idUser)->get();
-        dd($orders);
+        $orders = t_order::where('FKUser', $idUser)->get();        
 
         foreach($orders as $key => $value){
-            foreach($key as $key2 => $value){
-                $orders += $this->GetGamesFromBasket($key2['FKBasket']);
+            foreach($key as $key2 => $value2){               
+                if($key2 == "FKBasket"){
+                    $this->GetGamesFromBasket($value2);
+                }
             }
-            
         }
-        
-        
+              
         return view('pages/games', ['order' => $orders]);
     }
 }
