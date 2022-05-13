@@ -7,8 +7,10 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Schema;
 use App\Http\Controllers\DB;
+use App\Models\t_author;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB as FacadesDB;
+use Illuminate\Database\Eloquent\Model;
 
 class GameController extends Controller
 {
@@ -28,9 +30,9 @@ class GameController extends Controller
         return redirect()->back()->with('status','Student Added Successfully');
     }*/
 
-    public function displaceAddGame() {
+    public function displayAddGame() {
 
-        $games = t_article::all();
+        $games = t_article::whereBelongsTo(t_author::class, 'idAuthor', 'autCompanyName');
 
         return view('pages/addGame', ['games' => $games]);
     }

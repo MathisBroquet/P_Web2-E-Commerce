@@ -17,10 +17,8 @@ use App\Http\Controllers\Author;
 
         <select name="pets" id="pet-select">
             <?php
-                $oth = new Author();
-                $request = $oth->selectIdAndName();
-                foreach ($request as $key => $value){
-                    echo "<option value=".$key.">".$value."</option>";
+                foreach ($games as $key => $value) {
+                    echo "<option value='$key'>$value</option>";
                 }
             ?>
             <option value="">--Please choose an option--</option>
