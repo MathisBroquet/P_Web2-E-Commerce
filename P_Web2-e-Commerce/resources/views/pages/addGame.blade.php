@@ -1,3 +1,6 @@
+<?php 
+use App\Http\Controllers\Author; 
+?>
 @extends('layout')
 
 @section('content')
@@ -13,6 +16,13 @@
         <input type="integer" name="artFKAuthor" value="" id="" placeholder="fk">
 
         <select name="pets" id="pet-select">
+            <?php
+                $oth = new Author();
+                $request = $oth->selectIdAndName();
+                foreach ($request as $key => $value){
+                    echo "<option value=".$key.">".$value."</option>";
+                }
+            ?>
             <option value="">--Please choose an option--</option>
             <option value="dog">Dog</option>
             <option value="cat">Cat</option>
