@@ -4,13 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\t_user;
 use Illuminate\Http\Request;
-use Illuminate\Contracts\Auth\Authenticatable;
-use Illuminate\Auth\Authenticatable as BasicAuthenticatable;
+
 
 
 class UserController extends Controller
 {
-    use BasicAuthenticatable;
+    
     public function getAllUser()
     {
         $users = t_user::all();
@@ -25,7 +24,6 @@ class UserController extends Controller
                 'name' => ['required'],
                 'password' => ['required', 'confirmed', 'min:8'],
                 'password_confirmation' => ['required']
-
             ],
             [
                 'password.confirmed' => 'Votre mot de passe et sa confirmation ne correspondent pas.'
@@ -38,7 +36,7 @@ class UserController extends Controller
         $user->usePassword = bcrypt(request('password'));
         $user->useAdministrator = 0;
         $user->save();   
-        return view('pages/home');
+        return redirect('/games');
 
     }
 
@@ -59,21 +57,17 @@ class UserController extends Controller
             ]
         );
 
-        auth()->attempt([
-            'name' =>request('name'),
+        $results = auth()->attempt([
+            'useLogin' =>request('name'),
             'password' => request('password')
         ]);
 
-        return 'Traitement formulaire connexion';
-    }
-
-      /**
-     * Get the password for the user.
-     *
-     * @return string
-     */
-    public function getAuthPassword()
-    {
-        return $this->usePassword;
-    }
+        if($results)
+        {                    
+            return redirect('/user');                        
+        }
+        return back()->withInput()->withErrors([
+            'name' => "Votre nom d'utilisateur ou votre mot de passe est incorrect."
+        ]);
+    }     
 }

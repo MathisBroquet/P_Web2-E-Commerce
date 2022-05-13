@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CompteController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\UserController;
@@ -37,7 +38,7 @@ Route::post('/register', [UserController::class, 'addUser']);
 
 Route::post('connect', [UserController::class, 'connectUser']);
 
-
+Route::get('/user', [CompteController::class, 'accueil']);
 
 Route::get('/games', [GameController::class, 'getAllGames']);
 
