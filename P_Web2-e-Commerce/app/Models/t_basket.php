@@ -9,6 +9,7 @@ class t_basket extends Model
 {
     protected $table = 't_basket';
     protected $fillable = [
+        'idBasket',
         'basNumberOfGame',
     ];
     use HasFactory;

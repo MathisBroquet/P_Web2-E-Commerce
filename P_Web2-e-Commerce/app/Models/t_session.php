@@ -9,11 +9,12 @@ class t_session extends Model
 {
     protected $table = 't_session';
     protected $fillable = [
+        'idSession',
         'FKUser',
     ];
     use HasFactory;
 
     public function t_user(){
-        return $this->belongsTo(t_user::class);
+        return $this->belongsTo(t_user::class, "FKUser");
     }
 }

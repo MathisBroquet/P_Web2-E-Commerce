@@ -9,6 +9,7 @@ class t_category extends Model
 {
     protected $table = 't_category';
     protected $fillable = [
+        'idCategory',
         'catName',
     ];
     use HasFactory;

@@ -45,6 +45,6 @@ Route::get('/contact', function () {
     return view('pages.gontagt');
 });
 
-Route::get('/game', [OrderController::class, 'GetAllOrderFromSpecificUser'], function () {
-    return view('/game');
-})->name('Order.Get');
+Route::get('/games', [OrderController::class, 'GetAllOrderFromSpecificUser'], function () {
+    return view('pages.games');
+})->name('Order.get');

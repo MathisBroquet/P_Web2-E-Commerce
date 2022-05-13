@@ -9,6 +9,7 @@ class t_user extends Model
 {
     protected $table = 't_user';
     protected $fillable = [
+        'idUser',
         'useLogin',
         'usePassword',
         'useAdministrator',
