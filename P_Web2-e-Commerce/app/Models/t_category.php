@@ -12,4 +12,5 @@ class t_category extends Model
         'catName',
     ];
     use HasFactory;
+    //belongto
 }
