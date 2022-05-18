@@ -35,7 +35,7 @@ Route::post('/register', function(){
 
 Route::get('/games', [GameController::class, 'getAllGames']);
 
-Route::get("/game/displayAddGame", [GameController::class, 'displaceAddGame']);
+Route::get("/game/displayAddGame", [GameController::class, 'displayAuthors']);
 Route::post("/game/add", [GameController::class, 'addGame'])->name('game.add');
 Route::get("/game/test", [GameController::class, 'updateGame']);
 

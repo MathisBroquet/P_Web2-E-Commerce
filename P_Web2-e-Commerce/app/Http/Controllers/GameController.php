@@ -28,7 +28,7 @@ class GameController extends Controller
         return redirect()->back()->with('status','Student Added Successfully');
     }*/
 
-    public function displaceAddGame() {
+    public function displayAuthors() {
         return view('pages/addGame');
     }
 

@@ -13,13 +13,9 @@
         <input type="integer" name="artFKAuthor" value="" id="" placeholder="fk">
 
         <select name="pets" id="pet-select">
-            <option value="">--Please choose an option--</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">Hamster</option>
-            <option value="parrot">Parrot</option>
-            <option value="spider">Spider</option>
-            <option value="goldfish">Goldfish</option>
+            @foreach($authors as $author) 
+                <option value="{{$author->idAuthor}}">{{$author->autCompanyName}}</option>
+            @endforeach
         </select>
 
         <input type="submit" name="test">
