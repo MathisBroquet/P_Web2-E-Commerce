@@ -9,7 +9,15 @@ class t_basket extends Model
 {
     protected $table = 't_basket';
     protected $fillable = [
+        'idBasket',
         'basNumberOfGame',
     ];
     use HasFactory;
+
+    public function t_order(){
+        return $this->hasOne('App\t_order');
+    }
+    public function t_contain(){
+       return $this->belongsToMany(t_article::class, 't_contain', 'idBasket', 'idArticle');
+    }
 }

@@ -9,7 +9,11 @@ class t_category extends Model
 {
     protected $table = 't_category';
     protected $fillable = [
+        'idCategory',
         'catName',
     ];
     use HasFactory;
+    public function t_have(){
+        return $this->belongsToMany(t_category::class, 't_have', 'idArticle', 'idCategory');
+    }
 }

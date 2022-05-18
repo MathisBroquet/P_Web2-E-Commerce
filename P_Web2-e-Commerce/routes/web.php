@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GameController;
+use App\Http\Controllers\OrderController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,10 +37,15 @@ Route::post('/register', function(){
 
 Route::get('/games', [GameController::class, 'getAllGames']);
 
-Route::get("/game/displayAddGame", [GameController::class, 'displayAuthors']);
+Route::get("/game/displayAddGame", [GameController::class, 'getAuthors']);
+
 Route::post("/game/add", [GameController::class, 'addGame'])->name('game.add');
 Route::get("/game/test", [GameController::class, 'updateGame']);
 
 Route::get('/contact', function () {
     return view('pages.gontagt');
 });
+
+Route::get('/games', [OrderController::class, 'GetAllOrderFromSpecificUser'], function () {
+    return view('pages.games');
+})->name('Order.get');
