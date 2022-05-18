@@ -9,7 +9,11 @@ class CompteController extends Controller
 {
     public function accueil()
     {            
-        var_dump(Auth::user())   ;     
+        var_dump(auth()->check());
+        if(auth()->guest())
+        {
+            return redirect('/connect')->withErrors(['name' => "Vous devez vous connecter pour accéder à cette page."]);           
+        }     
         return view('pages.userConnected');
     } 
 }
