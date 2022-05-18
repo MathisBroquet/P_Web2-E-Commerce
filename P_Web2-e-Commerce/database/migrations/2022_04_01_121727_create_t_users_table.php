@@ -1,4 +1,4 @@
-<?php
+<?
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         
-        Schema::create('t_user', function (Blueprint $table) {
+        Schema::create('t_user', function (Blueprint $table) { 
             $table->id("idUser");
             $table->string("useLogin", 100);
             $table->string("usePassword", 150);

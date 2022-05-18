@@ -13,6 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
+        /*
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
@@ -20,6 +21,14 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->timestamps();
+        });
+        */
+        Schema::create('users', function (Blueprint $table) {
+            $table->id("idUser");
+            $table->string("useLogin", 100);
+            $table->string("usePassword", 150);
+            $table->boolean("useAdministrator");
             $table->timestamps();
         });
     }

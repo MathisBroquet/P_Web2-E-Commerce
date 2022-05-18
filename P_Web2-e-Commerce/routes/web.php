@@ -42,6 +42,10 @@ Route::get('/user', [CompteController::class, 'accueil']);
 
 Route::get('/games', [GameController::class, 'getAllGames']);
 
+Route::get('/your-profile', function(){
+    return view('pages.userInfos');
+});
+
 Route::get("/game/displayAddGame", [GameController::class, 'displaceAddGame']);
 Route::post("/game/add", [GameController::class, 'addGame'])->name('game.add');
 Route::get("/game/test", [GameController::class, 'updateGame']);

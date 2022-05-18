@@ -6,7 +6,7 @@
         </div>
         <div class="text-sm pb-6">
             <p>
-                Use this website as a way to inspire you to create your own
+                Use this website as a way to inspire you or to create your own
             </p>
         </div>
         <div class="flex justify-center items-center flex-col">

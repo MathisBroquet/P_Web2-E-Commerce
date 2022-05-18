@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Models\t_user;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 
 
 class UserController extends Controller
 {
-    
+
     public function getAllUser()
     {
         $users = t_user::all();
@@ -35,9 +36,8 @@ class UserController extends Controller
         $user->useLogin = request('name');
         $user->usePassword = bcrypt(request('password'));
         $user->useAdministrator = 0;
-        $user->save();   
-        return redirect('/games');
-
+        $user->save();
+        return redirect('/user');
     }
 
     public function deleteUser(int $idGame)
@@ -58,16 +58,18 @@ class UserController extends Controller
         );
 
         $results = auth()->attempt([
-            'useLogin' =>request('name'),
+            'useLogin' => request('name'),
             'password' => request('password')
-        ]);
+        ]);        
 
-        if($results)
-        {                    
+        if ($results) {                                           
+            var_dump(Auth::user());
             return redirect('/user');                        
+        } else {
+
+            return back()->withInput()->withErrors([
+                'name' => "Votre nom d'utilisateur ou votre mot de passe est incorrect."
+            ]);
         }
-        return back()->withInput()->withErrors([
-            'name' => "Votre nom d'utilisateur ou votre mot de passe est incorrect."
-        ]);
-    }     
+    }
 }
