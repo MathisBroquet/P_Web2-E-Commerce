@@ -1,6 +1,3 @@
-<?php 
-use App\Http\Controllers\Author; 
-?>
 @extends('layout')
 
 @section('content')
@@ -13,23 +10,12 @@ use App\Http\Controllers\Author;
         <input type="text" name="artPathToImage" value="" id="" placeholder="PathToImg">
         <input type="text" name="artPrice" value="" id="" placeholder="price">
         <input type="date" name="artReleaseDate" value="" id="" placeholder="release">
-        <input type="integer" name="artFKAuthor" value="" id="" placeholder="fk">
-
-        <select name="pets" id="pet-select">
-            <?php
-                foreach ($games as $key => $value) {
-                    echo "<option value='$key'>$value</option>";
-                }
-            ?>
-            <option value="">--Please choose an option--</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">Hamster</option>
-            <option value="parrot">Parrot</option>
-            <option value="spider">Spider</option>
-            <option value="goldfish">Goldfish</option>
+        <select name="artFKAuthor" id="author">
+            @foreach($authors as $author) 
+                <option value="{{$author->idAuthor}}">{{$author->autCompanyName}}</option>
+            @endforeach
         </select>
-
+        
         <input type="submit" name="test">
     </form>
 </div>

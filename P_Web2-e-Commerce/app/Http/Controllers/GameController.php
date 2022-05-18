@@ -14,10 +14,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class GameController extends Controller
 {
-    public function getAllGames(){
-        $games = t_article::all();
-        
-        return view('pages/games', ['article' => $games]);
+    public function getAuthors(){
+        $authors = t_author::all();
+        return view('pages/addGame', ['authors' => $authors]);
     } 
     /*public function store(Request $request)
     {
@@ -32,7 +31,7 @@ class GameController extends Controller
 
     public function displayAddGame() {
 
-        $games = t_article::whereBelongsTo(t_author::class, 'idAuthor', 'autCompanyName');
+        $games = "";//t_article::whereBelongsTo(t_author::class, 'idAuthor', 'autCompanyName');
 
         return view('pages/addGame', ['games' => $games]);
     }
