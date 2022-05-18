@@ -1,7 +1,7 @@
 <?php
 
-return [
 
+return [
     /*
     |--------------------------------------------------------------------------
     | Authentication Defaults
@@ -15,7 +15,7 @@ return [
 
     'defaults' => [
         'guard' => 'web',
-        'passwords' => 'users',
+        'passwords' => 'users'
     ],
 
     /*
@@ -62,13 +62,13 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\t_user::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+/*
+         'users' => [
+             'driver' => 'database',
+             'table' => 'user',
+         ],*/
     ],
 
     /*

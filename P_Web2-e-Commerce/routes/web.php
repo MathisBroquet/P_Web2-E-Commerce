@@ -1,8 +1,9 @@
 <?php
 
+use App\Http\Controllers\CompteController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GameController;
-use App\Http\Controllers\OrderController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,13 +32,24 @@ Route::get('/contact', function () {
 Route::get('/register', function(){
     return view('pages.register');
 });
-Route::post('/register', function(){
-    return 'Formulaire reçu';
+Route::get('/connect', function(){
+    return view('pages.connect');
 });
+Route::post('/register', [UserController::class, 'addUser']);
+
+Route::post('connect', [UserController::class, 'connectUser']);
+
+Route::get('/user', [CompteController::class, 'accueil']);
 
 Route::get('/games', [GameController::class, 'getAllGames']);
 
+
+Route::get('/your-profile', function(){
+    return view('pages.userInfos');
+});
+
 Route::get("/game/displayAddGame", [GameController::class, 'getAuthors']);
+
 Route::post("/game/add", [GameController::class, 'addGame'])->name('game.add');
 Route::get("/game/test", [GameController::class, 'updateGame']);
 

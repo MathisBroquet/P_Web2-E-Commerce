@@ -18,12 +18,24 @@
                 </a>
             </div>
             <div class=" h-24 w-1/4 justify-end items-center pr-4 flex">
+                @if(Auth::check())
+
+                <div class="pr-4">
+                    <a class="hover:text-ored-300" href="your-profile">Your profile</a>
+                </div>
+                <div>
+                    <a class="hover:text-ored-300" href="connect">Déconnexion</a>
+                </div>
+                @else
+
                 <div class="pr-4">
                     <a class="hover:text-ored-300" href="register">s'inscire</a>
                 </div>
                 <div>
-                    <a class="hover:text-ored-300" href="register">Connexion</a>
+                    <a class="hover:text-ored-300" href="connect">Connexion</a>
                 </div>
+
+                @endif
                 <div class="pl-8">
                     <a href="basket"><img class="hover:bg-ored-300 hover:bg-opacity-40 rounded-lg border-2 border-transparent hover:border-white" src="/images/ImagesHeader/Caddie.png" alt="image de panier"></a>
                 </div>
