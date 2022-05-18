@@ -37,10 +37,13 @@ Route::post('/register', function(){
 
 Route::get('/games', [GameController::class, 'getAllGames']);
 
+//Route::post("/game/displayAddGame", [GameController::class, 'getAuthors']);
 Route::get("/game/displayAddGame", [GameController::class, 'getAuthors']);
 
 Route::post("/game/add", [GameController::class, 'addGame'])->name('game.add');
 Route::get("/game/test", [GameController::class, 'updateGame']);
+
+Route::post("/game/modify", [GameController::class, 'modifyGame'])->name('game.modify');
 
 Route::get('/contact', function () {
     return view('pages.gontagt');
