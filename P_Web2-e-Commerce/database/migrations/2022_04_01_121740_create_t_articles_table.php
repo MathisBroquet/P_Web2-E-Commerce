@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string("artPathToImage", 400);
             $table->float("artPrice");
             $table->date("artRealeseDate");
-            $table->unsignedBigInteger("FKAuthor");
-            $table->foreign("FKAuthor")->references("idAuthor")->on("t_author")->onDelete("cascade");
+            //$table->unsignedBigInteger("FKAuthor");
+            $table->foreignId("FKAuthor")->references("idAuthor")->on("t_author")->onDelete("cascade");
             $table->timestamps();
         });
     }

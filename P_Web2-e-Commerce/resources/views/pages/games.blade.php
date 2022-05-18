@@ -1,8 +1,12 @@
 @extends('layout')
 
 @section('content')
+
+
+
 <div class="flex border-b-2 border-slate-600 mb-5">
     <div class=" w-1/10">
+
     </div>
     <div class="mt-4 h-40 ml w-4/5 flex justify-around items-center text-2xl text-white font-medium ">
         <div>
